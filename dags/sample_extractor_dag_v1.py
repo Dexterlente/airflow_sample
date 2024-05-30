@@ -30,3 +30,5 @@ second_task = PythonOperator(
     python_callable=task_two,
     dag=dag,
 )
+
+first_task >> second_task
